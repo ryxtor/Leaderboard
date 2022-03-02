@@ -2,7 +2,7 @@
 
 >  In this project I'm making a leaderboard using an external API
 
-![screenshot](src/screenshot.png)
+![screenshot](src/image/screenshot.png)
 
 ## Built With
 
