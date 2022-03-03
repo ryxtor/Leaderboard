@@ -18,24 +18,24 @@ submit.addEventListener('click', () => {
   setScores(name.value, score.value);
   name.value = '';
   score.value = '';
-  youDied.style.transition = "opacity 1s linear 0s";
+  youDied.style.transition = 'opacity 1s linear 0s';
   youDied.style.opacity = 1;
-    youDied.style.width = "100%";
-    youDied.style.top = "25%"
+  youDied.style.width = '100%';
+  youDied.style.top = '25%';
   setTimeout(() => {
     youDied.style.opacity = 0;
   }, 3000);
   setTimeout(() => {
-    youDied.style.width = "0";
-    youDied.style.top = "-100%"
+    youDied.style.width = '0';
+    youDied.style.top = '-100%';
   }, 4200);
 });
 
 const changeToUpperCase = (e) => {
-  let start = e.target.selectionStart;
-  let end = e.target.selectionEnd;
+  const start = e.target.selectionStart;
+  const end = e.target.selectionEnd;
   e.target.value = e.target.value.toUpperCase();
   e.target.setSelectionRange(start, end);
-}
+};
 
-name.addEventListener("keyup", changeToUpperCase, false);
+name.addEventListener('keyup', changeToUpperCase, false);
