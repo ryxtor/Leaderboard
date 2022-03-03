@@ -18,6 +18,17 @@ submit.addEventListener('click', () => {
   setScores(name.value, score.value);
   name.value = '';
   score.value = '';
+  youDied.style.transition = "opacity 1s linear 0s";
+  youDied.style.opacity = 1;
+    youDied.style.width = "100%";
+    youDied.style.top = "25%"
+  setTimeout(() => {
+    youDied.style.opacity = 0;
+  }, 3000);
+  setTimeout(() => {
+    youDied.style.width = "0";
+    youDied.style.top = "-100%"
+  }, 4200);
 });
 
 const changeToUpperCase = (e) => {
