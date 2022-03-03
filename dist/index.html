@@ -6,10 +6,8 @@
     <title>Leaderboard</title>
 <script defer src="main.js"></script></head>
 <body>
-    <header>
-        <h1 class="title">ELDEN RING<br>DEATH COUNT</h1>
-        
-    </header>
+    <div class="background"></div>
+    <h1 class="title">ELDEN RING<br>DEATH COUNT</h1>
     <div class="container">
         <section class="scores-container">
             <div class="refresh-container">
@@ -25,6 +23,9 @@
             <input type="number" placeholder="YOUR DEATHS" class="score-input" id="score-input" min="0" max="9999" required>
             <input type="button" value="SUBMIT" class="submit-btn" id="submit-btn">
         </section>
+    </div>
+    <div class="you-died">
+        <p>YOU DIED</p>
     </div>
 </body>
 </html>
