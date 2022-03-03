@@ -6,24 +6,26 @@
     <title>Leaderboard</title>
 <script defer src="main.js"></script></head>
 <body>
-    <header>
-        <h1 class="title">Leaderboard</h1>
-    </header>
+    <div class="background"></div>
+    <h1 class="title">ELDEN RING<br>DEATH COUNT</h1>
     <div class="container">
         <section class="scores-container">
             <div class="refresh-container">
-                <h2 class="sub-title">Recent scores</h2>
-                <input type="button" value="Refresh" class="refresh-btn" id="refresh-btn">
+                <h2 class="sub-title">RECENT DEATHS</h2>
+                <input type="button" value="REFRESH" class="refresh-btn" id="refresh-btn">
             </div>
         <ul class="ul" id="ul">
         </ul>
         </section>
         <section class="add-container">
-            <h2 class="sub-title">Add your score</h2>
-            <input type="text" placeholder="Your name" class="name-input" id="name-input" required>
-            <input type="number" placeholder="Your score" class="score-input" id="score-input" required>
-            <input type="button" value="Submit" class="submit-btn" id="submit-btn">
+            <h2 class="sub-title">ADD YOUR DEATHS</h2>
+            <input type="text" placeholder="YOUR NAME" class="name-input" id="name-input" required>
+            <input type="number" placeholder="YOUR DEATHS" class="score-input" id="score-input" min="0" max="9999" required>
+            <input type="button" value="SUBMIT" class="submit-btn" id="submit-btn">
         </section>
+    </div>
+    <div class="you-died" id="you-died">
+        <p>YOU DIED</p>
     </div>
 </body>
 </html>

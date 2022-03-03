@@ -10,7 +10,7 @@ const displayScores = () => {
   }
 
   getScores().then((result) => {
-    const orderScores = result.result.sort((a, b) => b.score - a.score);
+    const orderScores = result.result.sort((a, b) => a.score - b.score);
     orderScores.forEach((score) => {
       const li = document.createElement('li');
       li.className = 'li';

@@ -1,4 +1,4 @@
-const api = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/DU2APQewjCYKmHf7YWlp/scores';
+const api = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0a1NGfMH4OGvsGgpC5E6/scores';
 
 export const getScores = async () => {
   const response = await fetch(api);
