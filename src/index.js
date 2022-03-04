@@ -2,7 +2,7 @@ import './style.css';
 import { setScores } from './modules/leaderboardAPI.js';
 import displayScores from './modules/display.js';
 
-const submit = document.getElementById('submit-btn');
+const form = document.getElementById('form');
 const refresh = document.getElementById('refresh-btn');
 const name = document.getElementById('name-input');
 const score = document.getElementById('score-input');
@@ -14,7 +14,8 @@ refresh.addEventListener('click', () => {
   displayScores();
 });
 
-submit.addEventListener('click', () => {
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
   setScores(name.value, score.value);
   name.value = '';
   score.value = '';
