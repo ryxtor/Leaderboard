@@ -192,11 +192,20 @@ p {
   text-shadow: 2px 2px 1px #000;
 }
 
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 1000px) {
   .container {
     flex-direction: column;
     margin: 0 2rem;
     align-items: center;
+  }
+
+  .ul {
+    height: 300px;
   }
 
   .add-container {
