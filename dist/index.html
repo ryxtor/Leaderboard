@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://i.ibb.co/p3hJTHh/screenshot.png" >
     <title>Leaderboard</title>
 <script defer src="main.js"></script></head>
 <body>
@@ -18,10 +19,12 @@
         </ul>
         </section>
         <section class="add-container">
+            <form id="form">
             <h2 class="sub-title">ADD YOUR DEATHS</h2>
             <input type="text" placeholder="YOUR NAME" class="name-input" id="name-input" required>
             <input type="number" placeholder="YOUR DEATHS" class="score-input" id="score-input" min="0" max="9999" required>
-            <input type="button" value="SUBMIT" class="submit-btn" id="submit-btn">
+            <input type="submit" value="SUBMIT" class="submit-btn" id="submit-btn">
+        </form>
         </section>
     </div>
     <div class="you-died" id="you-died">
